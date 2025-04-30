@@ -1,15 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda do dia a dia</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calendário Agenda - Maio 2025</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+  <header>
+    <h1>Minha Agenda - Maio 2025</h1>
+  </header>
 
+  <main>
+    <section id="calendario">
+      <h2>Selecione um dia</h2>
+      <div class="dias">
+        <!-- Dias serão inseridos via JS -->
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section id="agenda">
+      <h2>Agenda do dia <span id="diaSelecionado">--</span></h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Horário</th>
+            <th>Tarefa</th>
+          </tr>
+        </thead>
+        <tbody id="tabelaAgenda">
+          <!-- Linhas geradas via JS -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
