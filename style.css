@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Variáveis de cores */
+
+:root {
+    --cor-primaria: #1F65BB;
+    --cor-secundaria: #fff;
+    --cor-terciaria: #000;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #1F65BB;
+    padding: 16px 0;
+    color: #fff;
+    display: flex;
+    border-bottom: 16px solid #000;
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+header button {
+    margin-left: 16px;
+}
+
+main {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+section {
+    border: 1px solid #000;
+    padding: 16px;
+    margin-top: 16px;
+}   
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.dias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.dias button {
+    flex: 1;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.botoes button {
+    cursor: pointer;
+    padding: 8px 16px;
+}
+
+.agenda {
+    display: none;
+}
+
+.agenda.ativo {
+    display: block;
+}
+
+.agenda table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+.agenda table td, .agenda table th {
+    border: 1px solid #000;
+    padding: 8px;
+}
+
+.agenda table th {
+    background-color: #1F65BB;
+    color: #fff;
+}
+
+.agenda table td {
+    text-align: center;
+}
+
+.agenda table td:hover {
+    background-color: #1F65BB;
+    color: #fff;
+    cursor: pointer;
+}
+
+.agenda table td.ativo {
+    background-color: #1F65BB;
+    color: #fff;
+}
+
+.agenda table td.ativo:hover {
+    background-color: #fff;
+    color: #1F65BB;
+    cursor: pointer;
+}
+/* Deixa o footer fixo no final da página */
+footer {
+    background-color: #1F65BB;
+    padding: 16px 0;
+    color: #fff;
+    display: flex;
+    border-top: 16px solid #000;
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+footer button {
+    margin-left: 16px;
+}
+
