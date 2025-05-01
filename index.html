@@ -1,60 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Calendário Agenda - Maio 2025</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda 2025</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Minha Agenda</h1>
+    <h1>Agenda 2025</h1>
   </header>
 
   <main>
+    <!-- Criando o calendário com tabela no javaScript pegando as datas corretamente -->
     <section id="calendario">
-      <h2>Selecione um mês</h2>
-      <select id="meses">
-        <option value="0">Janeiro</option>
-        <option value="1">Fevereiro</option>
-        <option value="2">Março</option>
-        <option value="3">Abril</option>
-        <option value="4">Maio</option>
-        <option value="5">Junho</option>
-        <option value="6">Julho</option>
-        <option value="7">Agosto</option>
-        <option value="8">Setembro</option>
-        <option value="9">Outubro</option>
-        <option value="10">Novembro</option>
-        <option value="11">Dezembro</option>
-      </select>
-
-      <h2>Selecione um dia</h2>
-      <div class="dias">
-        <!-- Dias serão inseridos via JS -->
+      <div class="mes-seletor">
+        <button id="prev">&#10094;</button>
+        <h2 id="mesAno"></h2>
+        <button id="next">&#10095;</button>
       </div>
-      <div class="botoes">
-        <button id="anterior">Anterior</button>
-        <button id="proximo">Próximo</button>
+
+      <div class="dias-semana">
+        <span>Dom</span><span>Seg</span><span>Ter</span><span>Qua</span>
+        <span>Qui</span><span>Sex</span><span>Sáb</span>
+      </div>
+
+      <div class="dias" id="dias">
+        <!-- Exemplo de dia -->
+        <!-- <div class="dia">1</div> -->
       </div>
     </section>
 
     <section id="agenda">
-      <h2>Agenda do dia <span id="diaSelecionado">--</span></h2>
-      <table>
+      <h2 id="diaSelecionado">Selecione um dia</h2>
+      <table id="tabelaAgenda">
         <thead>
           <tr>
             <th>Horário</th>
             <th>Tarefa</th>
           </tr>
         </thead>
-        <tbody id="tabelaAgenda">
-          <!-- Linhas geradas via JS -->
+        <tbody>
+          <!-- Exemplo de linha -->
+          <!-- <tr><td>08:00</td><td><input type="text" placeholder="Digite sua tarefa..."></td></tr> -->
         </tbody>
       </table>
     </section>
   </main>
-  <footer>&copyN&G Enterprises</footer>
+
   <script src="script.js"></script>
 </body>
 </html>
