@@ -107,6 +107,9 @@ function salvarTarefa(dia, horario, tarefa) {
   tarefas[dia] = tarefas[dia] || {};
   tarefas[dia][horario] = tarefa;
   localStorage.setItem('tarefas', JSON.stringify(tarefas));
+
+
+  
 }
 
 // Recuperar tarefas do localStorage
@@ -138,6 +141,8 @@ document.querySelector('#next').addEventListener('click', () => {
   atualizarCabecalho();
   criarDias();
 });
+
+
 
 // Inicializar
 atualizarCabecalho();
